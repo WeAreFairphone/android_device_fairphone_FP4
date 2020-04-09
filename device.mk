@@ -305,3 +305,7 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-qti
+
+# vndservicemanager
+PRODUCT_PACKAGES += \
+    vndservicemanager
