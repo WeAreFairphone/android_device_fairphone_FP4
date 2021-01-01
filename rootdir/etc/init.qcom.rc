@@ -118,10 +118,8 @@ on boot
     chown system system /sys/kernel/debug/msm_core/enable
     chown system system /sys/kernel/debug/msm_core/ptable
     chown system system /sys/kernel/boot_slpi/ssr
-    chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
     chmod 0660 /sys/module/bluetooth_power/parameters/power
     chmod 0660 /sys/module/hci_smd/parameters/hcismd_set
-    chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chmod 0660 /proc/bluetooth/sleep/proto
     chown bluetooth net_bt /dev/ttyHS0
@@ -332,10 +330,6 @@ on post-fs-data
 
     #Create a folder for SRS to be able to create a usercfg file
     #mkdir /data/data/media 0770 media media
-
-    #Create FM dir for patchdownloader
-    mkdir /data/vendor/fm 0770 system system
-    chmod 0770 /data/vendor/fm
 
     #Create PERFD deamon related dirs
     mkdir /data/vendor/perfd 0770 root system
@@ -913,7 +907,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
     user audioserver
-    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    # media gid needed for /data/misc/media (tee)
     group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
     capabilities BLOCK_SUSPEND
     ioprio rt 4
