@@ -301,3 +301,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.2-service-qti
