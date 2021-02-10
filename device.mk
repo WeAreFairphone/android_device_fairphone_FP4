@@ -250,6 +250,11 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
