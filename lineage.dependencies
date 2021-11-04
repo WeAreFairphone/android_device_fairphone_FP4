@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_fairphone_FP4",
+    "target_path": "kernel/fairphone/FP4"
+  }
+]
