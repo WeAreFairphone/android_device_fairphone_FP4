@@ -309,3 +309,7 @@ PRODUCT_PACKAGES += \
 # vndservicemanager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.FP4

@@ -27,7 +27,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define LOG_TAG "vendor.qti.hardware.vibrator.service"
+#define LOG_TAG "vendor.qti.hardware.vibrator.service.FP4"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>
