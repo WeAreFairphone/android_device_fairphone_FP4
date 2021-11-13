@@ -64,7 +64,7 @@ namespace vibrator {
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
-static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
+static const char LED_DEVICE[] = "/sys/class/leds/vibrator_aw8695";
 
 InputFFDevice::InputFFDevice()
 {
