@@ -175,6 +175,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor:64 \
     audio.bluetooth.default \
     com.dsi.ant@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
@@ -229,6 +230,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4-service.clearkey
 
 # Euicc
@@ -238,6 +240,16 @@ PRODUCT_COPY_FILES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor:64
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64
 
 # Health
 PRODUCT_PACKAGES += \
@@ -254,6 +266,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml \
     libipanat \
     liboffloadhal
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor:64
 
 # Media
 PRODUCT_PACKAGES += \
@@ -281,11 +297,18 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor:64 \
     netutils-wrapper-1.0
+
+# Neural networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2 \
+    android.hardware.nfc@1.2.vendor:64 \
+    android.hardware.secure_element@1.2.vendor:64 \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
@@ -307,6 +330,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Public libraries
@@ -322,6 +346,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor:64 \
+    android.hardware.radio.config@1.2.vendor:64 \
+    android.hardware.radio.deprecated@1.0.vendor:64 \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
