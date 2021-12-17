@@ -1,0 +1,6 @@
+[
+ {
+   "repository": "android_kernel_fairphone_sm7225",
+   "target_path": "device/fairphone/sm7225"
+ }
+]
