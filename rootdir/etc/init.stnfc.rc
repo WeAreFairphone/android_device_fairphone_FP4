@@ -1,0 +1,4 @@
+on post-fs-data
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 0660 /dev/st21nfc
+    chown nfc nfc /dev/st21nfc
