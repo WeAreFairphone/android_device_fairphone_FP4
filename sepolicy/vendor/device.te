@@ -1,0 +1,2 @@
+type fpsensor_fp_device, dev_type;
+type vl53l1_device, dev_type;

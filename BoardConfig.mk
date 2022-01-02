@@ -77,7 +77,6 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest-qva.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 cgroup.memory=nokmem,nosocket loop.max_part=7
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -159,6 +158,10 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-11-05
+
+# SEPolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
