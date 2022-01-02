@@ -1,0 +1,47 @@
+# Camera
+/dev/stmvl53l1_ranging                                                     u:object_r:vl53l1_device:s0
+/sys/class/board_id/version                                                u:object_r:tct_mmitest_sysfs:s0
+
+# Fingerprint
+/data/fpsensor(/.*)?                                                       u:object_r:fpsensor_data_file:s0
+/dev/fpsensor                                                              u:object_r:fpsensor_fp_device:s0
+
+# MAC (Bluetooth)
+/vendor/bin/bluetooth-mac_FP4                                              u:object_r:bluetooth-mac_exec:s0
+/mnt/vendor/persist/t2m_param(/.*)?                                        u:object_r:persist_t2m_param_file:s0
+
+# Modem
+/dev/block/platform/soc/1d84000.ufshc/by-name/tunning                      u:object_r:vendor_modem_efs_partition_device:s0
+
+# NFC
+/dev/st21nfc                                                               u:object_r:nfc_device:s0
+/vendor/bin/hw/android\.hardware\.nfc@1\.2-service.st                      u:object_r:hal_nfc_default_exec:s0
+
+# Pixelworks
+/vendor/bin/hw/vendor\.pixelworks\.hardware\.display\.iris-service         u:object_r:hal_graphics_composer_default_exec:s0
+/vendor/bin/hw/vendor\.pixelworks\.hardware\.feature\.irisfeature-service  u:object_r:hal_graphics_composer_default_exec:s0
+
+# SSR
+/sys/devices/platform/soc/aab0000.qcom,venus/subsys[0-9]+/name             u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/aab0000.qcom,venus/subsys[0-9]+/restart_level    u:object_r:vendor_sysfs_ssr_toggle:s0
+
+# Sysfs (Wakeup)
+/sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)?                          u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_aac/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_alac/wakeup[0-9]+(/.*)?                      u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_amrnb/wakeup[0-9]+(/.*)?                     u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_amrwb/wakeup[0-9]+(/.*)?                     u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_amrwbplus/wakeup[0-9]+(/.*)?                 u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_ape/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_evrc/wakeup[0-9]+(/.*)?                      u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_g711alaw/wakeup[0-9]+(/.*)?                  u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_g711mlaw/wakeup[0-9]+(/.*)?                  u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_mp3/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_multi_aac/wakeup[0-9]+(/.*)?                 u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_qcelp/wakeup[0-9]+(/.*)?                     u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)?                    u:object_r:sysfs_wakeup:s0
+
+# Vibrator
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.FP4               u:object_r:hal_vibrator_default_exec:s0
+
