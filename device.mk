@@ -201,6 +201,11 @@ PRODUCT_PACKAGES += \
     libipanat \
     liboffloadhal
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
