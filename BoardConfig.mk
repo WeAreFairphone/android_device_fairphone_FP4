@@ -63,3 +63,9 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 50
 TARGET_RECOVERY_UI_MARGIN_WIDTH := 10
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2021-11-05
+
+# Inherit the proprietary files
+include vendor/fairphone/FP4/BoardConfigVendor.mk
