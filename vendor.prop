@@ -1,0 +1,175 @@
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+persist.vendor.audio.ambisonic.auto.profile=false
+persist.vendor.audio.ambisonic.capture=false
+persist.vendor.audio.apptype.multirec.enabled=false
+persist.vendor.audio.avs.afe_api_version=2
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.tmic.enabled=false
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.ras.enabled=false
+persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.voicecall.speaker.stereo=true
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.ssr=false
+vendor.audio.adm.buffering.ms=2
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.enable.mirrorlink=false
+vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=true
+vendor.audio.hw.aac.encoder=true
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiaac.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.offload.passthrough=false
+vendor.audio.offload.track.enable=true
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.tunnel.encode=false
+vendor.audio.usb.disable.sidetone=true
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_size=192
+vendor.voice.path.for.pcm.voip=true
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.service.bdroid.soc.alwayson=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
+
+# Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+
+# Display
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.enable_async_powermode=1
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_optimize_refresh=1
+vendor.display.enable_perf_hint_large_comp_cycle=1
+vendor.display.enable_posted_start_dyn=1
+vendor.display.use_smooth_motion=1
+
+# DRM
+drm.service.enabled=true
+
+# DPM
+persist.vendor.dpmhalservice.enable=1
+
+# FM
+vendor.hw.fm.init=0
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Graphics
+debug.egl.hw=0
+debug.mdpcomp.logs=0
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.hw=0
+debug.sf.latch_unsignaled=1
+debug.sf.perf_fps_early_gl_phase_offset_ns=-5000000
+debug.sf.perf_fps_early_phase_offset_ns=-5000000
+debug.sf.perf_fps_late_sf_phase_offset_ns=-5000000
+persist.demo.hdmirotationlock=false
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lito.api30
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+#ro.opengles.version=196610
+vendor.gralloc.disable_ubwc=0
+vendor.opengles.version=196610
+
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# Media
+debug.stagefright.ccodec=1
+debug.stagefright.omx_default_rank=0
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# Netflix
+ro.netflix.bsp_rev=Q7250-19133-1
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+# Qualcomm System Daemon
+persist.vendor.qcomsysd.enabled=1
+
+# PASR
+vendor.pasr.activemode.enabled=true
+vendor.power.pasr.enabled=true
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Radio
+persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sib16_support=1
+ro.com.android.dataroaming=true
+ro.telephony.iwlan_operation_mode=AP-assisted
+
+# Sensors
+persist.vendor.sensors.debug.ssc_qmi_debug=true
+persist.vendor.sensors.allow_non_default_discovery=true
+
+# Shutdown
+sys.vendor.shutdown.waittime=500
+
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+
+# WiFi
+wifi.aware.interface=wifi-aware0
+
+# Surface Flinger
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
