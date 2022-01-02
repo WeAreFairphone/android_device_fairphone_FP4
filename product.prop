@@ -1,0 +1,7 @@
+# Audio
+audio.offload.min.duration.secs=30
+af.fast_track_multiplier=1
+audio.offload.video=true
+audio.deep_buffer.media=true
+ro.af.client_heap_size_kbyte=7168
+media.stagefright.audio.deep=false
