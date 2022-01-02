@@ -1,0 +1,10 @@
+type bluetooth-mac, domain;
+type bluetooth-mac_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(bluetooth-mac);
+
+allow bluetooth-mac vendor_toolbox_exec:file rx_file_perms;
+
+allow bluetooth-mac mnt_vendor_file:dir search;
+r_dir_file(bluetooth-mac, persist_t2m_param_file)
+
+set_prop(bluetooth-mac, vendor_bluetooth_prop)

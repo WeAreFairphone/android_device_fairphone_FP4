@@ -1,0 +1,8 @@
+# A2DP
+persist.vendor.bluetooth.a2dp.  u:object_r:vendor_bluetooth_prop:s0
+
+# Serial Nums
+vendor.t2m.camera_main.sn      u:object_r:vendor_t2m_sys_prop:s0
+vendor.t2m.camera_aux.sn       u:object_r:vendor_t2m_sys_prop:s0
+vendor.t2m.camera_front.sn     u:object_r:vendor_t2m_sys_prop:s0
+vendor.t2m.fingerprint.chipid  u:object_r:vendor_t2m_sys_prop:s0
