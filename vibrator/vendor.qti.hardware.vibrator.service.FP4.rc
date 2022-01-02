@@ -1,3 +1,8 @@
+on init
+    chown system system /sys/class/leds/vibrator_aw8695/activate
+    chown system system /sys/class/leds/vibrator_aw8695/duration
+    chown system system /sys/class/leds/vibrator_aw8695/state
+
 service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service.FP4
     class hal
     user system
