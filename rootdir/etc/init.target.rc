@@ -61,6 +61,9 @@ on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
+    chown system system /dev/stmvl53l1_ranging
+    chmod 0666 /dev/stmvl53l1_ranging
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
