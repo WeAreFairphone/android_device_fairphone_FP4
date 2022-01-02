@@ -43,6 +43,8 @@ on init
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     start vendor.qseecomd
     start keymaster-4-0
+    chmod 0660 /dev/fpsensor
+    chown system system /dev/fpsensor
 
 on early-fs
     start vold
