@@ -1,0 +1,6 @@
+sh_binary {
+    name: "bluetooth-mac_FP4",
+    init_rc: ["bluetooth-mac_FP4.rc"],
+    src: "bluetooth-mac_FP4.sh",
+    vendor: true,
+}

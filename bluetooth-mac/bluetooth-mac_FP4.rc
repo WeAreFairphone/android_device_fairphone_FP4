@@ -1,0 +1,7 @@
+service vendor.bluetooth-mac_FP4 /vendor/bin/bluetooth-mac_FP4
+    class core
+    group root system
+    oneshot
+
+on post-fs
+    mkdir /mnt/vendor/persist/t2m_param 0777 root system
