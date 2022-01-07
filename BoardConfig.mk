@@ -155,6 +155,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
+CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/apns-conf-custom.xml
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
