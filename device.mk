@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+# Euicc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-euicc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-euicc.xml
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
