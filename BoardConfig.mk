@@ -98,7 +98,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/fairphone/FP4
+TARGET_KERNEL_SOURCE := kernel/fairphone/sm7225
 TARGET_KERNEL_CONFIG := lineage_FP4_defconfig
 
 # Kernel modules - Audio
