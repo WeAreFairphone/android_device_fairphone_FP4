@@ -1,3 +1,6 @@
+# LED
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,wled@d800/backlight/backlight/brightness                                   u:object_r:sysfs_leds:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/990000.i2c/i2c-2/2-005a/leds/vibrator_aw8695                                                                                                       u:object_r:sysfs_leds:s0
 
