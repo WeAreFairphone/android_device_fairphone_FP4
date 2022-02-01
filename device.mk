@@ -285,7 +285,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.st \
+    android.hardware.nfc@1.2 \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
