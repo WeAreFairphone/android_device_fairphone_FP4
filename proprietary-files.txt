@@ -686,6 +686,11 @@ vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service.st
+vendor/etc/init/android.hardware.nfc@1.2-service.st.rc
+vendor/lib64/nfc_nci.st21nfc.st.so
+
 # NFC (Configs)
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci.conf
