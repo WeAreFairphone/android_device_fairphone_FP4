@@ -19,4 +19,13 @@
     <!-- the padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">16px</dimen>
     <dimen name="rounded_corner_content_padding">44px</dimen>
+
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">940px</dimen>
+
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
+
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">940px</dimen>
 </resources>
