@@ -1,6 +1,3 @@
-# A2DP
-persist.vendor.bluetooth.a2dp. u:object_r:vendor_bluetooth_prop:s0
-
 # Bluetooth MAC
 ro.vendor.t2m.btmac            u:object_r:vendor_t2m_sys_prop:s0
 
