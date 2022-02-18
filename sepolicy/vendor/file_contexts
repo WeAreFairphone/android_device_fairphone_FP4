@@ -1,3 +1,6 @@
+# Audio
+/mnt/vendor/persist/factory/audio/aw_cali\.bin                             u:object_r:vendor_persist_audio_file:s0
+
 # Camera
 /dev/stmvl53l1_ranging                                                     u:object_r:vl53l1_device:s0
 /sys/class/board_id/version                                                u:object_r:tct_mmitest_sysfs:s0
