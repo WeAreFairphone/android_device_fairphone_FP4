@@ -1,5 +1,4 @@
 # Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
 persist.bluetooth.disableinbandringing=false
 
 # Camera
