@@ -240,6 +240,7 @@ PRODUCT_COPY_FILES += \
 
 # fastbootd
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
 # Gatekeeper
