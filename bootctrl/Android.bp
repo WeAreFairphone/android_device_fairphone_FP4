@@ -14,12 +14,6 @@
 // limitations under the License.
 //
 
-cc_library {
-    name: "bootctrl.lito",
-    defaults: ["bootctrl_hal_defaults"],
-    static_libs: ["libgptutils.fairphone_lito"],
-}
-
 cc_library_shared {
     name: "android.hardware.boot@1.1-impl-qti",
     stem: "android.hardware.boot@1.0-impl-1.1-qti",
