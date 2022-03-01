@@ -1,5 +1,12 @@
 # A2DP
-persist.vendor.bluetooth.a2dp.  u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bluetooth.a2dp. u:object_r:vendor_bluetooth_prop:s0
+
+# Bluetooth MAC
+ro.vendor.t2m.btmac            u:object_r:vendor_t2m_sys_prop:s0
+
+# Light Sensor Calibration
+ro.vendor.tct.backcaldata      u:object_r:vendor_tct_default_prop:s0
+ro.vendor.tct.frontcaldata     u:object_r:vendor_tct_default_prop:s0
 
 # Serial Nums
 vendor.t2m.camera_main.sn      u:object_r:vendor_t2m_sys_prop:s0

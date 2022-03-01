@@ -1,0 +1,16 @@
+type tctd, domain;
+type tctd_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(tctd);
+
+# Traceability
+allow tctd block_device:dir search;
+allow tctd traceability_block_device:blk_file rw_file_perms;
+
+# Bluetooth MAC
+allow tctd mnt_vendor_file:dir search;
+r_dir_file(tctd, persist_t2m_param_file)
+
+set_prop(tctd, vendor_t2m_sys_prop)
+
+# Light Sensor Calibration
+set_prop(tctd, vendor_tct_default_prop)

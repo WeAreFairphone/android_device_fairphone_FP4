@@ -1,1 +1,2 @@
 type vendor_t2m_sys_prop, property_type;
+type vendor_tct_default_prop, property_type;

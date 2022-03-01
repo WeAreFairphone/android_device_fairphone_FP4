@@ -9,9 +9,6 @@
 # MAC (Bluetooth)
 /mnt/vendor/persist/t2m_param(/.*)?                                        u:object_r:persist_t2m_param_file:s0
 
-# Modem
-/dev/block/platform/soc/1d84000.ufshc/by-name/tunning                      u:object_r:vendor_modem_efs_partition_device:s0
-
 # NFC
 /dev/st21nfc                                                               u:object_r:nfc_device:s0
 /vendor/bin/hw/android\.hardware\.nfc@1\.2-service.st                      u:object_r:hal_nfc_default_exec:s0
@@ -40,6 +37,13 @@
 /sys/devices/virtual/misc/msm_qcelp/wakeup[0-9]+(/.*)?                     u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)?                       u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)?                    u:object_r:sysfs_wakeup:s0
+
+# Partitions
+/dev/block/platform/soc/1d84000.ufshc/by-name/tunning                      u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000.ufshc/by-name/traceability                 u:object_r:traceability_block_device:s0
+
+# Tct Daemon
+/vendor/bin/tctd                                                           u:object_r:tctd_exec:s0
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.FP4               u:object_r:hal_vibrator_default_exec:s0
