@@ -10,7 +10,6 @@
 /dev/fpsensor                                                              u:object_r:fpsensor_fp_device:s0
 
 # MAC (Bluetooth)
-/vendor/bin/bluetooth-mac_FP4                                              u:object_r:bluetooth-mac_exec:s0
 /mnt/vendor/persist/t2m_param(/.*)?                                        u:object_r:persist_t2m_param_file:s0
 
 # Modem
