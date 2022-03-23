@@ -135,7 +135,7 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so|99bbf4bf75ebc58021b10b843eb4728c9763964d
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.bitra.so|0c6788ba8f7f59efd5c2d671e339a93d32dbc36c|99bbf4bf75ebc58021b10b843eb4728c9763964d
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera (camerax)
