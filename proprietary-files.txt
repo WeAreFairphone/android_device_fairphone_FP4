@@ -1,7 +1,6 @@
 # Unpinned blobs from Fairphone/FP4eea/FP4:11/RKQ1.210503.001/FP3T:user/release-keys
 
 # ACDB
-vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/General_cal.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Global_cal.acdb
@@ -9,6 +8,7 @@ vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Handset_cal.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Headset_cal.acdb
 vendor/etc/acdbdata/MTP/lito-lagoon-fp4-snd-card/Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
 vendor/bin/adsprpcd
@@ -85,8 +85,8 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera
 vendor/lib/libswvdec.so
@@ -396,8 +396,8 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Euicc
--priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 -app/T2mEuiccOverlay/T2mEuiccOverlay.apk
+-priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # Feature enabler client
 vendor/bin/feature_enabler_client
