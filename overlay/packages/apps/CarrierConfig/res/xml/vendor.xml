@@ -88,6 +88,7 @@
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false"/>
         <string name="status_hint_label_wifi_call">WiFi Call
         </string>
+        <boolean name="show_wifi_calling_summary_bool" value="true"/>
         <boolean name="carrier_vt_available_bool" value="false"/>
         <boolean name="vt_ims_enabled" value="false"/>
         <boolean name="vt_toggle_show" value="false"/>
@@ -170,14 +171,34 @@
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="204" mnc="4">
-        <boolean name="carrier_volte_available_bool" value="true"/>
-        <boolean name="carrier_vt_available_bool" value="true"/>
-        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
-        <boolean name="check_mobile_data_for_cf" value="true"/>
-        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
+        <int name="maxImageHeight" value="1944"/>
+        <int name="maxMessageSize" value="1048576"/>
+        <int name="maxImageWidth" value="2592"/>
+        <string name="default_vm_number_string">+31654501233
+        </string>
+        <boolean name="check_mobile_data_for_cf" value="false"/>
+        <string-array name="preferred_network_mode_choices" num="5">
+            <item value="Automatic (5G &amp; 4G &amp; 3G &amp; 2G)"/>
+            <item value="Automatic (4G &amp; 3G &amp; 2G)"/>
+            <item value="Automatic (3G &amp; 2G)"/>
+            <item value="3G Only"/>
+            <item value="2G Only"/>
+        </string-array>
+        <string-array name="preferred_network_mode_values" num="5">
+            <item value="26"/>
+            <item value="9"/>
+            <item value="0"/>
+            <item value="2"/>
+            <item value="1"/>
+        </string-array>
         <boolean name="enabledMMS" value="false"/>
         <boolean name="enableMultipartSMS" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <string name="wifi_calling_settings_title">Wi-Fi Calling
@@ -187,13 +208,20 @@
         </string>
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
-        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
-        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
-        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
-        <boolean name="carrier_ut_provisioning_required_bool" value="false"/>
-        <string name="default_vm_number_string">31654501233
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <boolean name="carrier_vt_available_bool" value="true"/>
+        <boolean name="vt_ims_enabled" value="true"/>
+        <boolean name="vt_toggle_show" value="true"/>
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
+        <int name="spn_display_condition_override_int" value="0"/>
+        <boolean name="carrier_name_override_bool" value="true"/>
+        <string name="carrier_name_string">vodafone NL
         </string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="carrier_ut_provisioning_required_bool" value="false"/>
+        <boolean name="sms_ims_enabled" value="true"/>
         <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
         <boolean name="bluetooth_default_on" value="false"/>
         <int name="gea_algorithm" value="7"/>
@@ -201,6 +229,7 @@
         <string-array name="ecc_num_list_array" num="1">
             <item value="112"/>
         </string-array>
+        <boolean name="carrier_allow_transfer_ims_call_bool" value="false"/>
     </carrier_config>
     <carrier_config iccid="898603,898611,8985231,8985302,8985307" mcc="204" mnc="4">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -251,6 +280,9 @@
         </string>
         <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <int name="wfc_spn_format_idx_int" value="4"/>
+        <int name="wfc_data_spn_format_idx_int" value="4"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="4"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <int name="gea_algorithm" value="7"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
@@ -310,6 +342,8 @@
         <string-array name="carrier_preinstall" num="1">
             <item value="de.telekom.tsc"/>
         </string-array>
+        <string name="status_hint_label_wifi_call">Tele2 NL WiFi
+        </string>
     </carrier_config>
     <carrier_config gid1="4E4C" mcc="204" mnc="16">
         <string name="default_vm_number_string">+31640192939
@@ -319,6 +353,8 @@
         <string-array name="carrier_preinstall" num="1">
             <item value="de.telekom.tsc"/>
         </string-array>
+        <string name="status_hint_label_wifi_call">Tele2 NL WiFi
+        </string>
     </carrier_config>
     <carrier_config mcc="204" mnc="20">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -437,6 +473,7 @@
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
@@ -464,11 +501,12 @@
             <item value="com.orange.update"/>
         </string-array>
     </carrier_config>
-    <carrier_config mcc="208" mnc="1">
+    <carrier_config mcc="208" mnc="0">
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="vilte_data_is_metered_bool" value="false"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="config_update_volte_icon" value="false"/>
@@ -503,6 +541,73 @@
         <boolean name="orange_new_feature_enabled" value="true"/>
         <string name="wifi_calling_settings_title">Appels Wi-Fi
         </string>
+        <string name="status_hint_label_wifi_call">Appels Wi-Fi
+        </string>
+        <string-array name="bookmarks" num="12">
+            <item value="Orange"/>
+            <item value="http://www.orange.fr"/>
+            <item value="Actualités"/>
+            <item value="https://actu.orange.fr"/>
+            <item value="Météo"/>
+            <item value="https://meteo.orange.fr"/>
+            <item value="Jeux"/>
+            <item value="http://jeux.mob1.orange.fr"/>
+            <item value="Sports"/>
+            <item value="https://sports.orange.fr"/>
+            <item value="Orange Entreprise"/>
+            <item value="http://businesslounge.orange.fr"/>
+        </string-array>
+        <string name="home_page">https://www.orange.fr
+        </string>
+        <string name="bookmarks_folder_name">Orange Favoris
+        </string>
+        <string-array name="carrier_preinstall" num="2">
+            <item value="com.orange.aura.oobe"/>
+            <item value="com.orange.update"/>
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="208" mnc="1">
+        <boolean name="fallback_sms_not_allowed_in_roaming" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="vilte_data_is_metered_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
+        <int name="maxMessageSize" value="614400"/>
+        <string-array name="ecc_num_list_array" num="1">
+            <item value="112"/>
+        </string-array>
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default"/>
+            <item value="dun"/>
+            <item value="supl"/>
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default"/>
+            <item value="dun"/>
+            <item value="supl"/>
+        </string-array>
+        <boolean name="sms_cell_broadcast_enabled" value="true"/>
+        <string name="default_vm_number_string">888
+        </string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+        <boolean name="orange_new_feature_enabled" value="true"/>
+        <string name="wifi_calling_settings_title">Appels Wi-Fi
+        </string>
+        <string name="status_hint_label_wifi_call">Appels Wi-Fi
+        </string>
         <string-array name="bookmarks" num="12">
             <item value="Orange"/>
             <item value="http://www.orange.fr"/>
@@ -531,13 +636,65 @@
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="vilte_data_is_metered_bool" value="false"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
+        <int name="maxMessageSize" value="614400"/>
+        <string-array name="ecc_num_list_array" num="1">
+            <item value="112"/>
+        </string-array>
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default"/>
+            <item value="dun"/>
+            <item value="supl"/>
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default"/>
+            <item value="dun"/>
+            <item value="supl"/>
+        </string-array>
+        <boolean name="sms_cell_broadcast_enabled" value="true"/>
+        <string name="default_vm_number_string">888
+        </string>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+        <boolean name="orange_new_feature_enabled" value="true"/>
+        <string name="wifi_calling_settings_title">Appels Wi-Fi
+        </string>
+        <string name="status_hint_label_wifi_call">Appels Wi-Fi
+        </string>
+        <string-array name="bookmarks" num="12">
+            <item value="Orange"/>
+            <item value="http://www.orange.fr"/>
+            <item value="Actualités"/>
+            <item value="https://actu.orange.fr"/>
+            <item value="Météo"/>
+            <item value="https://meteo.orange.fr"/>
+            <item value="Jeux"/>
+            <item value="http://jeux.mob1.orange.fr"/>
+            <item value="Sports"/>
+            <item value="https://sports.orange.fr"/>
+            <item value="Orange Entreprise"/>
+            <item value="http://businesslounge.orange.fr"/>
+        </string-array>
+        <string name="home_page">https://www.orange.fr
+        </string>
+        <string name="bookmarks_folder_name">Orange Favoris
+        </string>
+        <string-array name="carrier_preinstall" num="2">
+            <item value="com.orange.aura.oobe"/>
+            <item value="com.orange.update"/>
+        </string-array>
     </carrier_config>
     <carrier_config mcc="208" mnc="9">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -587,6 +744,8 @@
         <int name="spn_display_condition_override_int" value="4"/>
         <boolean name="hd_codec_show_icon_in_notification_enabled" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="true"/>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true"/>
+        <boolean name="call_barring_visibility_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -637,6 +796,8 @@
         <int name="spn_display_condition_override_int" value="4"/>
         <boolean name="hd_codec_show_icon_in_notification_enabled" value="true"/>
         <boolean name="display_hd_audio_property_bool" value="true"/>
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true"/>
+        <boolean name="call_barring_visibility_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="208" mnc="11">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -652,7 +813,7 @@
         <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -661,7 +822,9 @@
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
-        <string name="wifi_calling_settings_title">Appels Wi-Fi
+        <string name="wifi_calling_settings_title">Appel WiFi
+        </string>
+        <string name="status_hint_label_wifi_call">Appel WiFi
         </string>
         <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
@@ -790,10 +953,13 @@
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
-        <string name="wifi_calling_settings_title">WiFi hívások
+        <string name="wifi_calling_settings_title">WiFi Hang
         </string>
-        <string name="status_hint_label_wifi_call">WiFi
+        <string name="status_hint_label_wifi_call">WiFi Hang
         </string>
+        <int name="wfc_spn_format_idx_int" value="7"/>
+        <int name="wfc_data_spn_format_idx_int" value="7"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="7"/>
         <int name="maxMessageSize" value="307200"/>
         <string name="default_vm_number_string">+36309888444
         </string>
@@ -1081,12 +1247,60 @@
         <boolean name="display_hd_audio_property_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="228" mnc="1">
+        <string name="vvm_destination_number_string">30047
+        </string>
+        <int name="vvm_port_number_int" value="0"/>
+        <string name="vvm_type_string">vvm_type_omtp
+        </string>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
-        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
-        <boolean name="editable_wfc_mode_bool" value="false"/>
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <string name="wifi_calling_settings_title">WiFi Call
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">WiFi Call
+        </string>
         <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <string-array name="ims_reasoninfo_mapping_string_array" num="2">
+            <item value="338|Busy everywhere|1404"/>
+            <item value="510|Busy everywhere|1404"/>
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="228" mnc="2">
+        <boolean name="vilte_data_is_metered_bool" value="true"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="true"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="false"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="sms_ims_enabled" value="true"/>
+        <boolean name="display_hd_audio_property_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="230" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1108,6 +1322,9 @@
         </string>
         <string name="status_hint_label_wifi_call">T-Mobile CZ Wi-Fi
         </string>
+        <int name="wfc_spn_format_idx_int" value="4"/>
+        <int name="wfc_data_spn_format_idx_int" value="4"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="4"/>
         <int name="gea_algorithm" value="7"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
         <boolean name="sms_ims_enabled" value="true"/>
@@ -1161,13 +1378,41 @@
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="true"/>
-        <boolean name="config_update_volte_icon" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
         <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
         <boolean name="volte_roaming" value="true"/>
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
-        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false"/>
+        <string name="wifi_calling_settings_title">WLAN-Call
+        </string>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <int name="maxMessageSize" value="307200"/>
+        <boolean name="sms_ims_enabled" value="true"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="display_hd_audio_property_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="232" mnc="2">
+        <boolean name="vilte_data_is_metered_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false"/>
         <string name="wifi_calling_settings_title">WLAN-Call
         </string>
         <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
@@ -1198,12 +1443,17 @@
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
         <string name="wifi_calling_settings_title">WLAN-Call
         </string>
+        <string name="status_hint_label_wifi_call">WLAN-Call
+        </string>
         <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <int name="wfc_spn_format_idx_int" value="2"/>
+        <int name="wfc_data_spn_format_idx_int" value="2"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="2"/>
         <int name="maxMessageSize" value="307200"/>
         <int name="gea_algorithm" value="7"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
@@ -1341,8 +1591,9 @@
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
-        <string name="status_hint_label_wifi_call">WLAN-Call
-        </string>
+        <int name="wfc_spn_format_idx_int" value="2"/>
+        <int name="wfc_data_spn_format_idx_int" value="2"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="2"/>
         <int name="maxMessageSize" value="307200"/>
         <int name="gea_algorithm" value="7"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
@@ -1453,6 +1704,62 @@
         </string>
         <string name="bookmarks_folder_name">T
         </string>
+    </carrier_config>
+    <carrier_config mcc="232" mnc="11">
+        <boolean name="vilte_data_is_metered_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false"/>
+        <string name="wifi_calling_settings_title">WLAN-Call
+        </string>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <int name="maxMessageSize" value="307200"/>
+        <boolean name="sms_ims_enabled" value="true"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="display_hd_audio_property_bool" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="232" mnc="12">
+        <boolean name="vilte_data_is_metered_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="false"/>
+        <string name="wifi_calling_settings_title">WLAN-Call
+        </string>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <int name="maxMessageSize" value="307200"/>
+        <boolean name="sms_ims_enabled" value="true"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="display_hd_audio_property_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="232" mnc="13">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1566,11 +1873,22 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="15">
-        <boolean name="carrier_volte_available_bool" value="true"/>
-        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
         <int name="smsToMmsTextThreshold" value="10"/>
+        <string name="default_vm_number_string">121
+        </string>
+        <string-array name="feature_access_codes_string_array" num="3">
+            <item value="153"/>
+            <item value="132"/>
+            <item value="45"/>
+        </string-array>
+        <string-array name="read_only_apn_types_string_array" num="0"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <string name="wifi_calling_settings_title">WiFi Call
         </string>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
@@ -1579,18 +1897,62 @@
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="carrier_ut_provisioning_required_bool" value="false"/>
-        <string name="default_vm_number_string">121
-        </string>
         <boolean name="bluetooth_default_on" value="false"/>
-        <int name="gea_algorithm" value="14"/>
+        <int name="gea_algorithm" value="12"/>
+        <boolean name="carrier_name_override_bool" value="true"/>
+        <string name="carrier_name_string">vodafone UK
+        </string>
         <string-array name="ecc_num_list_array" num="3">
             <item value="112"/>
             <item value="911"/>
             <item value="999"/>
         </string-array>
+    </carrier_config>
+    <carrier_config mcc="234" mnc="91">
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <int name="smsToMmsTextThreshold" value="10"/>
+        <string name="default_vm_number_string">121
+        </string>
+        <string-array name="feature_access_codes_string_array" num="3">
+            <item value="153"/>
+            <item value="132"/>
+            <item value="45"/>
+        </string-array>
+        <string-array name="read_only_apn_types_string_array" num="0"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <string name="wifi_calling_settings_title">WiFi Call
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">Vodafone WiFi Call
+        </string>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_ut_provisioning_required_bool" value="false"/>
+        <boolean name="bluetooth_default_on" value="false"/>
+        <int name="gea_algorithm" value="12"/>
+        <boolean name="carrier_name_override_bool" value="true"/>
+        <string name="carrier_name_string">vodafone UK
+        </string>
+        <string-array name="ecc_num_list_array" num="3">
+            <item value="112"/>
+            <item value="911"/>
+            <item value="999"/>
+        </string-array>
     </carrier_config>
     <carrier_config mcc="234" mnc="20">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1627,6 +1989,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="4"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="EE" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1662,6 +2025,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">EE
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="EEFF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1697,6 +2061,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">EE
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="C3" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1737,6 +2102,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">BT
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="C3FF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1777,6 +2143,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">BT
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="B3" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1817,6 +2184,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">BT
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="B3FF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1857,6 +2225,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">BT
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="31">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1891,6 +2260,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="0"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="32">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1925,6 +2295,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="0"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1959,6 +2330,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="4"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="EC" mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -1994,6 +2366,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">EE
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config gid1="ECFF" mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -2029,6 +2402,7 @@
         <boolean name="carrier_name_override_bool" value="true"/>
         <string name="carrier_name_string">EE
         </string>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="34">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -2063,6 +2437,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="0"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="234" mnc="38">
         <string-array name="ecc_num_list_array" num="3">
@@ -2076,14 +2451,14 @@
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
-        <boolean name="volte_roaming" value="false"/>
+        <boolean name="volte_roaming" value="true"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
         <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
-        <boolean name="editable_wfc_mode_bool" value="true"/>
-        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
         <string name="wifi_calling_settings_title">Sky WiFiCall
@@ -2133,6 +2508,7 @@
         <int name="default_network_mode" value="26"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="0"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="235" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -2161,6 +2537,7 @@
         <boolean name="editable_wfc_mode_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <int name="gea_algorithm" value="4"/>
     </carrier_config>
     <carrier_config mcc="235" mnc="91">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -2222,13 +2599,78 @@
     </carrier_config>
     <carrier_config mcc="240" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">WiFi Call
+        </string>
+        <boolean name="show_wifi_calling_summary_bool" value="true"/>
         <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="1"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="240" mnc="2">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">WiFi Call
+        </string>
+        <boolean name="show_wifi_calling_summary_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false"/>
+    </carrier_config>
+    <carrier_config mcc="240" mnc="5">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="volte_roaming" value="true"/>
+        <boolean name="config_update_service_status" value="true"/>
+        <boolean name="config_update_volte_icon" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">WiFi Call
+        </string>
+        <boolean name="show_wifi_calling_summary_bool" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false"/>
     </carrier_config>
     <carrier_config mcc="240" mnc="7">
         <boolean name="carrier_volte_available_bool" value="true"/>
@@ -2263,10 +2705,10 @@
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true"/>
-        <string name="wifi_calling_settings_title">Wi-Fi CALLing
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
         </string>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
-        <string name="status_hint_label_wifi_call">China Mobile WiFi CALL
+        <string name="status_hint_label_wifi_call">Wi-Fi Calling
         </string>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="editable_wfc_mode_bool" value="true"/>
@@ -2413,6 +2855,9 @@
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
     </carrier_config>
+    <carrier_config mcc="262">
+        <boolean name="sms_cell_broadcast_enabled" value="true"/>
+    </carrier_config>
     <carrier_config mcc="262" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
@@ -2431,9 +2876,13 @@
         <string name="status_hint_label_wifi_call">WLAN Call
         </string>
         <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_summary_bool" value="false"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="10"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <int name="wfc_spn_format_idx_int" value="2"/>
+        <int name="wfc_data_spn_format_idx_int" value="2"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="2"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <int name="wifi_network_exist" value="2"/>
         <boolean name="wifi_preconfig_ap_delete" value="false"/>
@@ -2653,6 +3102,9 @@
         <boolean name="enableMMSReadReports" value="false"/>
         <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
         <int name="spn_display_condition_override_int" value="2"/>
+        <boolean name="carrier_name_override_bool" value="true"/>
+        <string name="carrier_name_string">congstar
+        </string>
         <string-array name="bookmarks" num="6">
             <item value="congstar.de"/>
             <item value="https://www.congstar.de"/>
@@ -2671,30 +3123,44 @@
     </carrier_config>
     <carrier_config mcc="262" mnc="2">
         <boolean name="carrier_volte_available_bool" value="true"/>
-        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
-        <int name="smsToMmsTextThreshold" value="5"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="config_update_service_status" value="false"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
-        <string name="wifi_calling_settings_title">Wi-Fi CALLing
-        </string>
-        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
-        <string name="status_hint_label_wifi_call">Vodafone WiFi Calling
-        </string>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
-        <boolean name="sms_ims_enabled" value="true"/>
-        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <int name="emergency_notification_delay_int" value="5000"/>
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
+        </string>
+        <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <string name="status_hint_label_wifi_call">Vodafone Wi-Fi Calling
+        </string>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
+        <boolean name="sms_ims_enabled" value="false"/>
+        <boolean name="play_call_recording_tone_bool" value="true"/>
+        <int name="volte_replacement_rat_int" value="3"/>
+        <int name="wfc_spn_format_idx_int" value="11"/>
+        <boolean name="enable_carrier_display_name_resolver_bool" value="true"/>
+        <int name="spn_display_condition_override_int" value="2"/>
+        <boolean name="carrier_name_override_bool" value="true"/>
+        <string name="carrier_name_string">Vodafone.de
+        </string>
         <string name="default_vm_number_string">5500
         </string>
-        <boolean name="bluetooth_default_on" value="false"/>
-        <string-array name="ecc_num_list_array" num="1">
-            <item value="112"/>
-        </string-array>
-        <boolean name="wfc_toggle_show" value="true"/>
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
-        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <int name="smsToMmsTextThreshold" value="5"/>
         <boolean name="sms_cell_broadcast_enabled" value="true"/>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
+        <int name="gea_algorithm" value="12"/>
     </carrier_config>
     <carrier_config mcc="262" mnc="9">
         <int name="smsToMmsTextThreshold" value="5"/>
@@ -2703,13 +3169,16 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
-        <string name="wifi_calling_settings_title">Wi-Fi CALLing
+        <string name="wifi_calling_settings_title">Wi-Fi Calling
         </string>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
         <string name="status_hint_label_wifi_call">Vodafone WiFi Calling
         </string>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2"/>
+        <boolean name="editable_wfc_mode_bool" value="false"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
         <boolean name="sms_ims_enabled" value="true"/>
         <boolean name="carrier_use_ims_first_for_emergency_bool" value="true"/>
         <string name="default_vm_number_string">5500
@@ -2718,8 +3187,6 @@
         <string-array name="ecc_num_list_array" num="1">
             <item value="112"/>
         </string-array>
-        <boolean name="wfc_toggle_show" value="true"/>
-        <int name="carrier_default_wfc_ims_mode_int" value="2"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="sms_cell_broadcast_enabled" value="true"/>
     </carrier_config>
@@ -2753,7 +3220,7 @@
             <item value="911"/>
             <item value="999"/>
         </string-array>
-        <boolean name="carrier_supports_ss_over_ut_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="sms_cell_broadcast_enabled" value="true"/>
     </carrier_config>
     <carrier_config mcc="262" mnc="5">
@@ -2772,6 +3239,8 @@
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="editable_wfc_roaming_mode_bool" value="false"/>
@@ -2783,11 +3252,29 @@
         <string name="status_hint_label_wifi_call">WLAN Call
         </string>
         <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="show_wifi_calling_summary_bool" value="false"/>
         <boolean name="editable_wfc_mode_bool" value="false"/>
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="10"/>
         <boolean name="show_wifi_calling_icon_in_status_bar_bool" value="true"/>
+        <int name="wfc_spn_format_idx_int" value="2"/>
+        <int name="wfc_data_spn_format_idx_int" value="2"/>
+        <int name="wfc_flight_mode_spn_format_idx_int" value="2"/>
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
-        <int name="gea_algorithm" value="7"/>
+        <int name="wifi_network_exist" value="2"/>
+        <boolean name="wifi_preconfig_ap_delete" value="false"/>
+        <string name="wifi_network_ssid">Telekom_SIM
+        </string>
+        <string name="wifi_security_mode">EAP
+        </string>
+        <string name="wifi_eap_method">AKA
+        </string>
+        <string name="wifi_network_ssid2">Telekom_SIM
+        </string>
+        <string name="wifi_security_mode2">EAP
+        </string>
+        <string name="wifi_eap_method2">SIM
+        </string>
+        <int name="gea_algorithm" value="6"/>
         <int name="smsToMmsTextThreshold" value="-1"/>
         <boolean name="show_ims_registration_status_bool" value="true"/>
         <boolean name="sms_ims_enabled" value="true"/>
@@ -2803,6 +3290,7 @@
             <item value="0"/>
             <item value="1"/>
         </string-array>
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false"/>
         <boolean name="display_hd_audio_property_bool" value="false"/>
     </carrier_config>
     <carrier_config gid1="1" mcc="262" mnc="6">
@@ -2905,7 +3393,7 @@
             <item value="911"/>
             <item value="999"/>
         </string-array>
-        <boolean name="carrier_supports_ss_over_ut_bool" value="false"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="sms_cell_broadcast_enabled" value="true"/>
     </carrier_config>
     <carrier_config mcc="262" mnc="8">
@@ -2986,6 +3474,48 @@
             <item value="112"/>
         </string-array>
         <boolean name="sms_cell_broadcast_enabled" value="true"/>
+    </carrier_config>
+    <carrier_config mcc="270" mnc="1">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="false"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
+        <boolean name="sms_ims_enabled" value="false"/>
+    </carrier_config>
+    <carrier_config mcc="270" mnc="77">
+        <boolean name="carrier_volte_available_bool" value="true"/>
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
+        <boolean name="config_update_service_status" value="false"/>
+        <boolean name="config_update_volte_icon" value="false"/>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
+        <boolean name="carrier_wfc_ims_available_bool" value="true"/>
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <boolean name="wfc_toggle_show" value="true"/>
+        <boolean name="editable_wfc_mode_bool" value="true"/>
+        <boolean name="editable_wfc_roaming_mode_bool" value="true"/>
+        <int name="carrier_default_wfc_ims_mode_int" value="1"/>
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1"/>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+        <boolean name="carrier_vt_available_bool" value="false"/>
+        <boolean name="vt_ims_enabled" value="false"/>
+        <boolean name="vt_toggle_show" value="false"/>
+        <boolean name="sms_ims_enabled" value="false"/>
     </carrier_config>
     <carrier_config mcc="270" mnc="99">
         <boolean name="fallback_sms_not_allowed_in_roaming" value="true"/>
