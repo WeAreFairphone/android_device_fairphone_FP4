@@ -72,7 +72,7 @@
         <int name="maxMessageSize" value="307200"/>
         <boolean name="carrier_volte_available_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="false"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
         <boolean name="hide_lte_plus_data_icon_bool" value="true"/>
@@ -197,7 +197,7 @@
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
         <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -508,7 +508,7 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -573,7 +573,7 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -638,7 +638,7 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
         <boolean name="volte_roaming" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -813,7 +813,7 @@
         <boolean name="carrier_default_data_roaming_enabled_bool" value="false"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="true"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -1883,7 +1883,7 @@
             <item value="45"/>
         </string-array>
         <string-array name="read_only_apn_types_string_array" num="0"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -1924,7 +1924,7 @@
             <item value="45"/>
         </string-array>
         <string-array name="read_only_apn_types_string_array" num="0"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -1961,7 +1961,7 @@
     <carrier_config mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -1994,7 +1994,7 @@
     <carrier_config gid1="EE" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2030,7 +2030,7 @@
     <carrier_config gid1="EEFF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2066,7 +2066,7 @@
     <carrier_config gid1="C3" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2107,7 +2107,7 @@
     <carrier_config gid1="C3FF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2148,7 +2148,7 @@
     <carrier_config gid1="B3" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2189,7 +2189,7 @@
     <carrier_config gid1="B3FF" mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2230,7 +2230,7 @@
     <carrier_config mcc="234" mnc="31">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2265,7 +2265,7 @@
     <carrier_config mcc="234" mnc="32">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2300,7 +2300,7 @@
     <carrier_config mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2335,7 +2335,7 @@
     <carrier_config gid1="EC" mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2371,7 +2371,7 @@
     <carrier_config gid1="ECFF" mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2407,7 +2407,7 @@
     <carrier_config mcc="234" mnc="34">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2478,7 +2478,7 @@
     <carrier_config mcc="234" mnc="86">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -2676,7 +2676,7 @@
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="volte_roaming" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="wfc_toggle_show" value="true"/>
@@ -3124,7 +3124,7 @@
     <carrier_config mcc="262" mnc="2">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -3166,7 +3166,7 @@
         <int name="smsToMmsTextThreshold" value="5"/>
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="carrier_wfc_ims_available_bool" value="true"/>
         <boolean name="wfc_toggle_show" value="true"/>
         <string name="wifi_calling_settings_title">Wi-Fi Calling
@@ -5307,7 +5307,7 @@
     <carrier_config mcc="505" mnc="2">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -5324,7 +5324,7 @@
     <carrier_config mcc="505" mnc="1">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -5337,7 +5337,7 @@
     <carrier_config mcc="505" mnc="3">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -5350,7 +5350,7 @@
     <carrier_config mcc="505" mnc="6">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="true"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
@@ -5389,7 +5389,7 @@
     <carrier_config mcc="302" mnc="610">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
@@ -5415,7 +5415,7 @@
     <carrier_config mcc="302" mnc="220">
         <boolean name="carrier_volte_available_bool" value="true"/>
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true"/>
-        <boolean name="hide_enhanced_4g_lte_bool" value="true"/>
+        <boolean name="hide_enhanced_4g_lte_bool" value="false"/>
         <boolean name="config_update_service_status" value="false"/>
         <boolean name="config_update_volte_icon" value="false"/>
         <boolean name="show_4g_for_lte_data_icon_bool" value="false"/>
