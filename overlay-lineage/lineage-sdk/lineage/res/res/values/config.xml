@@ -13,9 +13,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
-
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
