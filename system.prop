@@ -17,9 +17,6 @@ persist.vendor.cne.feature=1
 # e-SIM
 masterclear.allow_retain_esim_profiles_after_fdr=1
 
-# Google WFD Settings
-persist.debug.wfd.enable=1
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
